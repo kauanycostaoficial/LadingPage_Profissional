@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&family=Italianno&family=Jomolhari&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("/img/casamento_principal.png");
+    background-size: cover;
+    width: 100%;
+    height: 92vh;
+
+}
+
+.conteudo_principal_primario_logo {
+    padding: 30px;
+}
+
+.conteudo_principal_primario_logo img {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.conteudo_principal_primario_texto {
+    padding-top: 25px;
+    padding-left: 80px;
+}
+
+.conteudo_principal_primario_texto_principal {
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 110px;
+    width: 1300px;
+}
+
+.conteudo_principal_primario_texto_segundario {
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 968px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 18px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #65542B;
+    width: 50px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #D9D9D9;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #D9D9D9;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #523f0d;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+#verticle-line {
+    width: 3px;
+    height: 250px;
+    background-color: #D9D9D9;
+}
+
+#horizontal-line {
+    width: 1137px;
+    height: 3px;
+    background-color: #000000;
+}
+
+#horizontal-line-branca {
+    width: 750px;
+    height: 3px;
+    background-color: #D9D9D9;
+}
+
+.conteudo_principal_primario_redes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    bottom: 20%;
+    gap: 40px;
+    align-items: center;
+}
+
+.instagram {
+    cursor: pointer;
+}
+
+.instagram:hover {
+    scale: 1.1;
+}
+
+.logo_linkedln {
+    cursor: pointer;
+}
+
+.logo_linkedln:hover {
+    scale: 1.1;
+}
+
+.contato {
+    cursor: pointer;
+}
+
+.contato:hover {
+    scale: 1.1;
+}
+
+.setinha {
+    position: absolute;
+    left: 80px;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.setinha:hover {
+    scale: 1.1;
+}
+
+main {
+    background: #D9D9D9;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.conteudo_segundario_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.conteudo_segundario_titulo {
+    color: #65542B;
+    text-align: center;
+    font-family: Jomolhari;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.conteudo_segundario_div iframe{  
+   width: 760px;
+   height: 315px;
+}
+.conteudo_segundario_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+.conteudo_segundario_div_p {
+    display: flex;
+    gap: 35px;
+}
+
+.conteudo_segundario_div_p>div>h3 {
+    color: #000;
+    font-family: Jomolhari;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conteudo_segundario_div_p>div>p {
+    color: #000;
+    font-family: Jomolhari;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conteudo_terciario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.conteudo_terciario_titulo {
+    color: #65542B;
+    text-align: center;
+    font-family: Jomolhari;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px; 
+}
+
+.conteudo_terciario_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.conteudo_terciario_img>img {
+    width: 322px;
+    height: 541px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(30%);
+    cursor: pointer;
+    transition: all 0.2s linear;
+    box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
+    margin-bottom: 50px;
+}
+
+.conteudo_terciario_img>img:hover {
+    scale: 1.1;
+}
+
+footer {
+    background-image: url(/img/fotografo.png);
+    background-size: cover;
+    width: 92%;
+    height: 90vh;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.conteudo_quartenario_texto>h1 {
+    color: #836c38;
+    font-family: Jomolhari;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5%;
+    padding-bottom: 25px;
+}
+
+.conteudo_quartenario_texto>p {
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 900px;
+    padding-bottom: 3%;
+}
+
+.conteudo_quartenario_redes {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 35px;
+
+}
+
+.footer_principal {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_principal>p {
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        background-image: url("/img/casamento_principal.png");
+        background-size: cover;
+        display: block;
+        height: 50vh;
+        background-position: 40%;
+    }
+
+    .conteudo_principal_primario_logo {
+        padding: 20px;
+    }
+
+    .conteudo_principal_primario_logo>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .conteudo_principal_primario_texto {
+        padding-top: 0px;
+        padding-left: 30px;
+    }
+
+    .conteudo_principal_primario_texto_principal {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        padding-bottom: 15px;
+    }
+
+    .conteudo_principal_primario_texto_segundario {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        
+        padding-left: 0px;
+        padding-bottom: 50px;
+        width: 220px;
+    }
+
+    .cta:before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cta {
+        position: relative;
+        margin: auto;
+        padding: 7px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cta span {
+        font-size: 13px;
+    }
+
+    #verticle-line {
+        width: 1px;
+        height: 70px;
+    }
+
+    #horizontal-line {
+        width: 180px;
+        height: 1px;
+    }
+
+    #horizontal-line-branca {
+        width: 70px;
+        height: 1px;
+    }
+
+    .conteudo_principal_primario_redes {
+        right: 10px;
+        bottom: 55%;
+        gap: 15px;
+
+    }
+
+    .instagram {
+        width: 25px;
+    }
+
+    .logo_linkedln {
+        width: 25px;
+    }
+
+    .contato {
+        width: 25px;
+    }
+
+    .setinha {
+        display: none;
+    }
+
+    main {
+        background: #D9D9D9;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .conteudo_segundario_titulo {
+        color: #65542B;
+        font-size: 10px;
+        
+    }
+
+    .conteudo_segundario_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;  
+        text-align: center;
+    }
+
+    .conteudo_segundario_div iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .conteudo_segundario_div_p {
+        gap: 5px;
+    }
+    .conteudo_segundario_div_p>div>h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conteudo_segundario_div_p>div>p {
+       display: none;
+    }
+
+    .conteudo_terciario {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+    }
+    
+    .conteudo_terciario_titulo {
+        font-size: 10px;
+        display: flex;
+      align-items: center;
+    }
+    .conteudo_terciario_img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        gap: 5px;
+    }
+    
+    .conteudo_terciario_img>img {
+        width: 80px;
+        height: 120px;
+        margin-bottom: 30px;
+      
+    }
+    footer {
+        background-image: url(/img/casamento_principal.png) ;
+        height: 65vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .conteudo_quartenario_texto>h1 {
+        color: #836c38;
+        font-family: Jomolhari;
+        font-size: 20px;
+        padding-top: 5%;
+        padding-bottom: 10px;
+        
+    }
+    .conteudo_quartenario_texto>p {
+        font-size: 12px;
+        width: 250px;
+        padding-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .conteudo_quartenario_redes {
+        display: none;
+    }
+    
+    .footer_principal {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+        justify-content: none;
+        
+    }
+    
+    .footer_principal>p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    #baixo{
+        display: none;
+    }
+}
